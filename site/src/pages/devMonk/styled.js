@@ -18,9 +18,9 @@ flex-direction: row;
 }
 
 .box-cadastrar {
-    width: 80%;
+    width: 90%;
     background-color: white;
-    margin-left: 6em;
+    margin-left: 4em;
     margin-top: 20px;
     padding-bottom: 40px;
 }
@@ -63,9 +63,9 @@ button {
 
 .matriculados {
     background-color: white;
-    width: 80%;
+    width: 90%;
     margin-top: 3em;
-    margin-left: 6em;
+    margin-left: 4em;
 }
 
 .matriculados > div {

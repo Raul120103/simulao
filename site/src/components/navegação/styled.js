@@ -6,6 +6,10 @@ flex-direction: column;
 background-color: #2B3031;
 width: 30%;
 border-right: 40px;
+height: 100vh;
+
+position: sticky;
+top: 0px;
 
 .dev {
     display: flex;
