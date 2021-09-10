@@ -4,8 +4,7 @@ const Containernavegador = styled.div`
 display: flex;
 flex-direction: column;
 background-color: #2B3031;
-width: 25%;
-height: 100vh;
+width: 30%;
 border-right: 40px;
 
 .dev {

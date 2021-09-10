@@ -1,11 +1,16 @@
 import styled from 'styled-components'
 
-const Containerconteudo = styled.div`
+const Conteudo = styled.div`
 display: flex;
 flex-direction: column;
 background-color: #F5F5F5;
 align-self: center;
-height: 100vh;
+width: 100vw;
+`
+
+const Containerconteudo = styled.div`
+display: flex;
+flex-direction: row;
 
 .box-input, .cada-inputs, .box-input2{
 display flex;
@@ -13,10 +18,11 @@ flex-direction: row;
 }
 
 .box-cadastrar {
-    width: 60%;
-    height: 30%;
-    background-color:  white;
-    margin-left: 22em;
+    width: 80%;
+    background-color: white;
+    margin-left: 6em;
+    margin-top: 20px;
+    padding-bottom: 40px;
 }
 
 
@@ -57,9 +63,9 @@ button {
 
 .matriculados {
     background-color: white;
-    width: 60%;
+    width: 80%;
     margin-top: 3em;
-    margin-left: 22em;
+    margin-left: 6em;
 }
 
 .matriculados > div {
@@ -103,5 +109,12 @@ td {
     font-weight: 600;
 }
 
+.button {
+    cursor: pointer;
+}
+
+.linha {
+    background-color: #fffff;
+}
 `
-export { Containerconteudo }
+export { Containerconteudo, Conteudo }
