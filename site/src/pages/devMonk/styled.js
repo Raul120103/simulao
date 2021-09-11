@@ -9,11 +9,21 @@ width: 100vw;
 `
 
 const Containerconteudo = styled.div`
+
+body {
+    margin: 0px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    }
 display: flex;
 flex-direction: row;
 
 .box-input, .cada-inputs, .box-input2{
-display flex;
+display: flex;
 flex-direction: row;
 }
 
@@ -23,8 +33,22 @@ flex-direction: row;
     margin-left: 4em;
     margin-top: 20px;
     padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
+
+
+.mo {
+    position: relative;
+    top: 35px;
+    left: 33px;
+    border: #986CDF solid;
+    border-radius: 20px;
+    width: .1em;
+    height: 1.5em;
+    background-color: #986CDF;
+}
 
 .box-input {
     margin: 40px 11px 20px 36px;
@@ -44,12 +68,13 @@ margin-left: 12px;
 input {
     width: 200px;
     height: 30px;
-
+    margin-left: 9px;
     background: #FFFFFF;
     border: 1px solid #A8A8A8;
     box-sizing: border-box;
     border-radius: 5px;
     padding-left: .5em;
+    box-sizing: border-box;
 
 }
 button {
@@ -57,7 +82,8 @@ button {
     border: none;
     background-color: #E911C6;
     border-radius: 30px;
-    width: 12%;
+    width: 10%;
+    padding: 7px;
     color: white;
 }
 
@@ -114,7 +140,7 @@ td {
 }
 
 .linha {
-    background-color: #fffff;
+    background-color: #fff;
 }
 `
 export { Containerconteudo, Conteudo }

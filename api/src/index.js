@@ -4,19 +4,26 @@ import express from 'express'
 import cors from 'cors'
 const app = express();
 app.use(cors());
+app.use(express.json())
 
 app.get('/matricula', async (req, resp) =>  {
     try {
-        let resultados = await db.tb_matricula.findAll();
+        let resultados = await db.tb_matricula.findAll({order: [['id_matricula', 'desc']] });
         resp.send(resultados)
     } catch (e) {
-        resp.send({ erro: 'Ocorreu um Erro!'})
+        resp.send({ erro: console.error.toString() })
     }
 })
 
 app.post('/matricula', async (req, resp) => {
     try {
         let {nome, chamada, curso, turma} = req.body; 
+
+        let existe = await db.tb_matricula.findOne({where: {nr_chamada: chamada, nm_turma: turma}})
+
+        if(existe != null){
+            resp.send({erro: "Aluno Já Existe"})
+        } else {
 
         let u = await db.tb_matricula.create({ 
           
@@ -27,10 +34,14 @@ app.post('/matricula', async (req, resp) => {
 
              })
         resp.send(u);
-    } catch (e){
+     }
+    }
+      
+    catch (e){
         return resp.send({ erro: 'Ocorreu um Erro' });
 
     }
+
 })
 
 

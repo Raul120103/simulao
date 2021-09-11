@@ -7,6 +7,8 @@ background-color: white;
 font-family: Roboto;
 font-size: 12px;
 
+position: sticky;
+top: 0px;
 
 .cabe-usuario {
     padding: 15px  17px 0px 18px;
@@ -17,8 +19,12 @@ font-size: 12px;
 
 .cabe-nome {
     margin-bottom: 0.84em;
+    color: #615858;
     margin-left: 14px;
-
+    font-Style: normal;
+     font-Size: 20px;
+     font-weight: 500;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .cabe-notifi {
@@ -38,9 +44,10 @@ font-size: 12px;
 
 p {
     position: absolute;
-    top: -11px;
-    left: 4px;
+    top: -13px;
+    left: 2px;
     color: white;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 
